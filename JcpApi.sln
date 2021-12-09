@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JcpApi", "JcpApi.csproj", "{B69A7A21-26DC-4845-9B32-2EDE0A8488BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B69A7A21-26DC-4845-9B32-2EDE0A8488BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B69A7A21-26DC-4845-9B32-2EDE0A8488BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B69A7A21-26DC-4845-9B32-2EDE0A8488BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B69A7A21-26DC-4845-9B32-2EDE0A8488BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF9C8B9A-3405-4539-BDCA-3AD70538E2EF}
+	EndGlobalSection
+EndGlobal
