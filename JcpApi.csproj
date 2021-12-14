@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Configuracoes\**" />
+    <Compile Remove="Controllers\**" />
+    <Content Remove="Configuracoes\**" />
+    <Content Remove="Controllers\**" />
+    <EmbeddedResource Remove="Configuracoes\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Configuracoes\**" />
+    <None Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0">
       <PrivateAssets>all</PrivateAssets>
@@ -17,11 +28,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Configuracoes\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

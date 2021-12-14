@@ -11,19 +11,23 @@ namespace JcpApi.Data
     {
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Fornecedor> Fornecedores { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // string C com o banco de dados sql server
-            optionsBuilder.UseSqlServer("Password=Bf18102907;Persist Security Info=True;User ID=jeancpcorrea;Initial Catalog=JcpApi;Data Source=LB\\SQLEXPRESS");
+            optionsBuilder.UseSqlServer("Password=Bf18102907;Persist Security Info=True;User ID=jeancpcorrea;Initial Catalog=JcpApi;Data Source=DESKTOP-43O4B71\\SQLEXPRESS");
 
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // to passando que o novo das tabelas no banco de dados será "Categoria " e "Produto", caso nao passe este parametro, será criado no pural, ex "Produtos" 
-            modelBuilder.Entity<Produto>().ToTable("Produto");
-            modelBuilder.Entity<Fornecedor>().ToTable("Fornecedor");
+           // modelBuilder.Entity<Produto>().ToTable("Produto");
+           // modelBuilder.Entity<Fornecedor>().ToTable("Fornecedor");
+           // modelBuilder.Entity<Categoria>().ToTable("Categoria");
 
-            modelBuilder.Entity<Produto>().Property(p => p.PrecoProduto).HasPrecision(10, 2);
+
+            modelBuilder.Entity<Produto>().Property(p => p.ValorUniProduto).HasPrecision(10, 2);
+            modelBuilder.Entity<Produto>().Property(p => p.ValorTotalProduto).HasPrecision(10, 2);
 
             /*                                         // Adicionar manunalmente os registros no banco de dados 
             modelBuilder.Entity<ProdutoModel>().HasData(
